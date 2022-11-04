@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 1248px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+    /* logo */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    animation: logo 1s ease-in ;
+    transform: translate(2s ease-in) ;
+    transition:1s ;
+}
+.navbar .logo span{
+    color: rgb(12, 90, 24);
+}
+.navbar .logo:hover{
+    transform: scale(1.1);
+}
+
+@keyframes logo {
+    from{   
+        transform: translate(-50px,0px);
+        opacity: 0;
+    }to{
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+}
+    /* nav */
+
+.navbar .nav {
+    display: flex;
+    list-style: none;
+    animation: nav 1s ease-in-out;
+}
+.navbar .nav ul{
+    list-style: none;
+}
+.navbar .nav ul li {
+    margin: 15px 25px;
+}
+.navbar .nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav ul:hover{
+    background-color: rgb(113, 198, 198);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.navbar .nav ul li a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+@keyframes nav {
+    from{
+        transform: translate(50px,0px);
+        opacity: 0;
+    }to{
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+}
+    /* main title */
+.main {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.main .content{
+    width: 50%;
+}
+
+.main .content .title{
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    animation: title 1s ease-in;
+}
+.main .content span{
+    animation: span 3s ease-in ;
+}
+@keyframes span{
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes title {
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* main btn */
+
+.main .btn {
+        width: 140px;
+        height: 40px;
+        background-color: RGB(142, 173, 213);
+        line-height: 40px;
+        border-radius: 10px;
+        position: relative;
+        top: 30px;
+} 
+.main .btn p{
+    position: absolute;
+    left: 30px;
+    color: white;
+    font-size: 12px
+}
+.main .btn:hover{
+    background-color: rgb(110, 170, 170);
+    transition: 0.5s;
+}
+    /* main img */
+.main .product {
+    display: flex;
+    justify-content:center ;
+}
+.main .product img {
+    width: 70%;
+    animation: img 1s ease-in-out;
+    transition: 1s;
+    transform: translate(1.1s ease-in);
+}
+.main .product img:hover{
+    transform: scale(1.1);
+}
+@keyframes img {
+    from{
+        transform: translate(0px,-50px);
+        opacity: 0;
+    }to{
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+}
+
+/* footer */
+.footer {
+    padding-top: 80px;
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer .content-footer p{
+    letter-spacing: 2px;
+    color: RGB(121, 129, 148);
+}
+
+.footer .item {
+    background-color: RGB(246, 246, 246);
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 5px
+}
+.footer .item i {
+    font-size: 30px;
+    padding: 0px 25px;
+    line-height: 50px;
+}
+.footer .item i p {
+    float: right;
+    margin-left: 10px;
+}
+
+
+
+
+    /* reponsive */
+/* 
+    @media screen and (max-width:363px) {
+        .navbar .logo {
+            font-size: 18px;
+        }
+        .navbar .nav{
+            display: none;
+        }
+
+
+        .main {
+            display: block;
+        }
+        .main .content .title{
+            font-size: 30px;
+            
+        }
+        .main .content span {
+            text-align: center;
+        }
+    } */

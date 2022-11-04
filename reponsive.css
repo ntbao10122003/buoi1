@@ -1,0 +1,21 @@
+@media screen and (max-width:600px) {
+    .navbar .logo {
+        font-size: 18px;
+    }
+    .navbar .nav{
+        display: none;
+    }
+
+
+    .main {
+        flex-direction: column;
+    }
+    .main .content .title{
+        font-size: 30px;
+    }
+    .main .content span {
+        text-align: center;
+    }
+
+    
+}

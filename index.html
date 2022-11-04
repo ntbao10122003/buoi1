@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.js">
+        <link rel="stylesheet" href="reponsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">DIGIAL <span>AGENCY</span></div>
+            <div class="nav">
+                <ul>
+                    <li class=""><a href="">home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">about</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">testimonials</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="content">
+                <h1 class="title">Building Digial <br> Products, Brands <br> & Expererience</h1>
+                <span>Digital Agency is Your Team Maganement Tool That <br> Easy And Prompt</span>
+                <div class="btn">
+                    <p>CONTACT US</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/undraw_projections_re_ulc6.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="content-footer">
+                <p>Truct By 4,000+ Companies</p>
+            </div>
+            <div class="item">
+                <i class="fa-brands fa-spotify">
+                    <p>spoify</p>
+                </i>
+                <i class="fa-brands fa-slack">
+                    <p>Slack</p>
+                </i>
+                <i class="fa-brands fa-dropbox">
+                    <p> Dropbox</p>
+                </i>
+                <i class="fa-solid fa-biohazard">
+                    <p> Dropbox</p>
+                </i>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var slide = document.querySelector('.product img');
+var arrImg=[
+    'img/undraw_cloud_hosting_7xb1.svg',
+    'img/undraw_projections_re_ulc6.svg',
+    // 'img/undraw_relaxation_re_ohkx.svg',
+];
+
+var index = 0; 
+function show(){
+    if(index < 0 || index > 1)
+    index = 0 ;
+    slide.src = arrImg[index];
+    index ++;
+}
+ var interval = setInterval(show,1500);
+
+ 
+    </script>
+</body>
+
+</html>
